@@ -30,12 +30,12 @@
  */
 
 :root {
-  --lightblue: #158441;
-  --darkblue: #126362;
+  --lightblue: #070707;
+  --darkblue: #9f0202;
   --white: #ffffff;
   --darkwhite: #f9f9f9;
     --darkgray: #cccccc;
-  --lightdark: #1AA853;
+  --lightdark: #281d1d;
   --attention: #bb1a06;
 }
 
@@ -490,7 +490,7 @@ a.active {
   font-size: calc(var(--font-large) + 1rem);
   padding: 3%;
   position: absolute;
-  width: 23%;
+  width: 42%;
   margin: 0 10%;
   text-align: left;
   background-color: rgba(0, 0, 0, 0.55); /* più contrasto */
@@ -508,7 +508,7 @@ a.active {
 }
 
 .text .titolo-stile {
-  color: var(--lightblue) !important;
+  color: var(--darkblue) !important;
   font-size: calc(var(--font-large) + 3rem);
 }
 
@@ -1093,7 +1093,7 @@ input #phone {
   .nav-links a {
     font-size: calc(var(--font-large) + 0.4rem);
     letter-spacing: 1px;
-    color: var(--lightblue);
+    color: var(--darkblue);
   }
 
   .nav-links li {
@@ -1106,7 +1106,7 @@ input #phone {
 
   .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
-    background-color: var(--lightblue);
+    background-color: var(--darkblue);
   }
 
   .toggle .line2 {
@@ -1115,7 +1115,7 @@ input #phone {
 
   .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
-    background-color: var(--lightblue);
+    background-color: var(--darkblue);
   }
 }
 
