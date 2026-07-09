@@ -30,8 +30,8 @@
  */
 
 :root {
-  --lightblue: #070707;
-  --darkblue: #9f0202;
+  --lightblue: #ece930;
+  --darkblue: #e6d818;
   --white: #ffffff;
   --darkwhite: #f9f9f9;
     --darkgray: #cccccc;
@@ -105,7 +105,7 @@ h2 {
 }
 
 *::selection {
-  background: var(--lightblue);
+  background: var(--light);
   color: var(--white);
 }
 
@@ -142,7 +142,7 @@ form .btn:hover,
 .btn:hover {
   color: var(--lightblue);
   transition-delay: 0.1s;
-  background-color: var(--darkblue);
+  background-color: var(--lightdark);
 }
 
 form .btn {
@@ -151,7 +151,7 @@ form .btn {
   padding: 2rem 3rem;
   background: var(--white);
   font-size: var(--font-normal);
-  color: var(--lightblue);
+  color: var(--lightdark);
   cursor: pointer;
   text-transform: uppercase;
   border: 0.1rem solid var(--lightblue);
@@ -274,7 +274,7 @@ a.active {
 }
 
 .nav-links a:hover {
-  color: var(--darkblue);
+  color: var(--lightdark);
 }
 
 .burger {
@@ -744,7 +744,7 @@ img {
 .colajx {
   margin-left: 0rem;
   margin-right: 0.5rem;
-  color: var(--lightblue);
+  color: var(--lightdark);
 }
 
 .sidebar {
@@ -942,7 +942,7 @@ input #phone {
 }
 
 .footer .box-container .socials a:hover i {
-  color: var(--darkblue);
+  color: var(--lightdark);
 }
 
 .footer .box-container .nav-footer li {
@@ -1093,7 +1093,7 @@ input #phone {
   .nav-links a {
     font-size: calc(var(--font-large) + 0.4rem);
     letter-spacing: 1px;
-    color: var(--darkblue);
+  color: var(--lightdark);
   }
 
   .nav-links li {
@@ -1106,7 +1106,7 @@ input #phone {
 
   .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
-    background-color: var(--darkblue);
+    background-color: var(--lightdark);
   }
 
   .toggle .line2 {
@@ -1115,7 +1115,7 @@ input #phone {
 
   .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
-    background-color: var(--darkblue);
+    background-color: var(--lightdark);
   }
 }
 
