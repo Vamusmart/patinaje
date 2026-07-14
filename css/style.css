@@ -765,6 +765,10 @@ img {
   padding-bottom: clamp(2rem, 3vh, 4rem);
 }
 
+#update p:first-of-type {
+    margin-bottom: 30px;
+}
+
 #load-1 {
   box-sizing: border-box;
   width: 100%;
