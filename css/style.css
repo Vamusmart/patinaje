@@ -30,13 +30,13 @@
  */
 
 :root {
-  --lightblue: #ebfd2a;
-  --darkblue: #e6d818;
+  --lightyellow: #ebfd2a;
   --white: #ffffff;
   --darkwhite: #f9f9f9;
-    --darkgray: #cccccc;
-  --lightdark: #281d1d;
+  --darkgray: #cccccc;
   --attention: #bb1a06;
+  --darkblue: #273c88;
+
 }
 
 :root {
@@ -50,8 +50,10 @@
 }
 
 ::placeholder {
-  color: var(--darkgray); /* più visibile del default */
-  opacity: 1; /* importante per Safari */
+  color: var(--darkgray);
+  /* più visibile del default */
+  opacity: 1;
+  /* importante per Safari */
 }
 
 /* Per compatibilità completa */
@@ -59,7 +61,7 @@ input::placeholder,
 textarea::placeholder {
   color: var(--darkgray);
   opacity: 1;
-    font-family: "Gotham-Book", Arial, Helvetica, sans-serif;
+  font-family: "Gotham-Book", Arial, Helvetica, sans-serif;
 }
 
 #home {
@@ -120,7 +122,7 @@ body {
 }
 
 body.loaded {
-  opacity:1;
+  opacity: 1;
   transition: opacity 0.3s ease;
 }
 
@@ -128,7 +130,7 @@ body.loaded {
   display: inline-block;
   margin-top: 1rem;
   padding: 2rem 3rem;
-  background: var(--lightblue);
+  background: var(--lightyellow);
   font-size: var(--font-medium);
   color: var(--white);
   cursor: pointer;
@@ -140,9 +142,9 @@ body.loaded {
 form .btn:hover,
 #wedo .btn:hover,
 .btn:hover {
-  color: var(--lightblue);
+  color: var(--lightyellow);
   transition-delay: 0.1s;
-  background-color: var(--lightdark);
+  background-color: var(--darkblue);
 }
 
 form .btn {
@@ -151,10 +153,10 @@ form .btn {
   padding: 2rem 3rem;
   background: var(--white);
   font-size: var(--font-normal);
-  color: var(--lightdark);
+  color: var(--darkblue);
   cursor: pointer;
   text-transform: uppercase;
-  border: 0.1rem solid var(--lightblue);
+  border: 0.1rem solid var(--lightyellow);
   font-weight: 100;
 }
 
@@ -170,7 +172,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 3rem;
-  background-color: var(--lightblue);
+  background-color: var(--lightyellow);
   z-index: 1000;
   height: auto;
   overflow: visible;
@@ -178,7 +180,7 @@ header {
 
 header .logo {
   font-size: calc(var(--font-medium) + 0.4rem);
-  color: var(--darkblue);
+  color: var(--lightyellow);
   height: auto;
   max-height: 7rem;
   object-fit: contain;
@@ -193,7 +195,7 @@ header .logo img {
 }
 
 header .logo span {
-  color: var(--lightblue);
+  color: var(--lightyellow);
 }
 
 header .navbar a {
@@ -204,7 +206,7 @@ header .navbar a {
 }
 
 header .navbar a:hover {
-  color: var(--darkblue);
+  color: var(--lightyellow);
 }
 
 header input {
@@ -213,7 +215,7 @@ header input {
 
 header label {
   font-size: var(--font-large);
-  color: var(--lightblue);
+  color: var(--lightyellow);
   cursor: pointer;
   visibility: hidden;
   opacity: 0;
@@ -222,7 +224,8 @@ header label {
 /* MAIN LANDMARK */
 main {
   display: block;
-  padding-top: var(--nav-height); /* evita che l'header fisso copra il contenuto */
+  padding-top: var(--nav-height);
+  /* evita che l'header fisso copra il contenuto */
 }
 
 /**
@@ -241,12 +244,12 @@ main {
 }
 
 #navbar.scrolled {
-  background-color: var(--lightdark);
+  background-color: var(--white);
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
 }
 
 /* #navbar.scrolled .nav-links a {
-  color: var(--darkblue);
+  color: var(--lightyellow);
 } */
 
 .nav-links {
@@ -262,7 +265,7 @@ main {
 }
 
 .nav-links a {
-  color: var(--white);
+  color: var(--darkblue);
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
@@ -274,7 +277,8 @@ a.active {
 }
 
 .nav-links a:hover {
-  color: var(--lightdark);
+  color: var(--white);
+  text-shadow: 1px 1px 1px rgba(37, 1, 196, 0.3);
 }
 
 .burger {
@@ -285,7 +289,7 @@ a.active {
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: var(--white);
+  background-color: var(--darkblue);
   margin: 5px;
   transition: transform 0.3s ease;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
@@ -346,14 +350,16 @@ a.active {
   width: auto;
   flex: 1;
   font-size: calc(var(--font-normal) + 0.2rem);
+  color: var(--darkblue);
+
 }
 
 #consent-popup p a {
-  color: var(--lightblue);
+  color: var(--darkblue);
 }
 
 #consent-popup p a:visited {
-  color: var(--lightdark);
+  color: var(--lightyellow);
 }
 
 .item {
@@ -371,13 +377,16 @@ a.active {
   height: 50px;
   line-height: 50px;
   font-size: calc(var(--font-small) + 1rem);
-  color: var(--white);
+  color: var(--darkblue);
   cursor: pointer;
   text-transform: uppercase;
   border: 0.1rem solid var(--white);
-  background: var(--lightblue);
+  background: var(--lightyellow);
   font-weight: bold;
   padding: 0.6rem 8.6rem;
+  text-shadow: 1px 1px 1px rgba(37, 1, 196, 0.3);
+  /* Ombra blu al 50% di opacità */
+
 }
 
 .wrapper {
@@ -387,7 +396,7 @@ a.active {
 }
 
 .item:hover {
-  color: var(--lightblue);
+  color: var(--lightyellow);
   cursor: pointer;
 }
 
@@ -399,6 +408,9 @@ a.active {
   font-size: calc(var(--font-normal) + 0.2rem);
   color: var(--darkblue);
   padding: 1rem 0;
+  text-shadow: 1px 1px 1px rgba(37, 1, 196, 0.3);
+  /* Ombra blu al 50% di opacità */
+
 }
 
 /* Slideshow container */
@@ -414,7 +426,7 @@ a.active {
 
 .home .content .features {
   height: 100%;
-  background-color: var(--lightblue);
+  background-color: var(--lightyellow);
   padding-bottom: 1rem;
   margin-bottom: 2rem;
 }
@@ -428,7 +440,8 @@ a.active {
 .slideshow-container {
   position: relative;
   /*height: 68vh;  o un valore fisso coerente */
-  height: 70rem; /* perchè su ipad mini rimaneva troppo verde sotto lo slideshow */
+  height: 70rem;
+  /* perchè su ipad mini rimaneva troppo verde sotto lo slideshow */
   overflow: hidden;
 }
 
@@ -493,8 +506,10 @@ a.active {
   width: 42%;
   margin: 0 10%;
   text-align: left;
-  background-color: rgba(0, 0, 0, 0.55); /* più contrasto */
-  backdrop-filter: blur(4px); /* effetto moderno (opzionale) */
+  background-color: rgba(0, 0, 0, 0.55);
+  /* più contrasto */
+  backdrop-filter: blur(4px);
+  /* effetto moderno (opzionale) */
   top: calc(var(--nav-height) + 15rem);
   transform: translateY(-50%);
   text-shadow: 0 1px 3px rgba(40, 181, 127, 0.8);
@@ -508,12 +523,16 @@ a.active {
 }
 
 .text .titolo-stile {
-  color: var(--darkblue) !important;
+  color: var(--lightyellow) !important;
   font-size: calc(var(--font-large) + 3rem);
 }
 
 .text .testo-stile {
   color: var(--darkwhite) !important;
+}
+
+.testo-wedo {
+  color: var(--darkblue) !important;
 }
 
 /* Fading animation 
@@ -553,7 +572,8 @@ a.active {
   left: 50%;
   transform: translateX(-50%);
   padding: 1em;
-  z-index: 10; /* Forza i pallini a stare sopra le slide */
+  z-index: 10;
+  /* Forza i pallini a stare sopra le slide */
 }
 
 /* The dots/bullets/indicators */
@@ -656,7 +676,7 @@ img {
   width: 100%;
   align-items: center;
   justify-content: center;
-  background-color: var(--lightblue);
+  background-color: var(--lightyellow);
 }
 
 #we,
@@ -697,14 +717,14 @@ img {
 #wedo {
   flex-direction: row-reverse;
   background-color: var(--white);
-  color: var(--lightblue);
-  border-color: var(--lightblue);
+  color: var(--lightyellow);
+  border-color: var(--lightyellow);
   text-align: right;
 }
 
 .about .column .content p {
   font-size: var(--font-normal);
-  color: var(--white);
+  color: var(--darkblue);
   padding: 1rem 4rem;
 }
 
@@ -714,7 +734,7 @@ img {
 
 .about .column .heading {
   text-align: left;
-  background: var(--lightblue);
+  background: var(--lightyellow);
   color: transparent;
   color: var(--white);
   font-size: calc(var(--font-large) + 3rem);
@@ -745,7 +765,11 @@ img {
 .colajx {
   margin-left: 0rem;
   margin-right: 0.5rem;
-  color: var(--lightdark);
+  color: var(--lightyellow);
+  text-shadow: 1px 1px 1px rgba(37, 1, 196, 0.3);
+  /* Ombra blu al 50% di opacità */
+  letter-spacing: 1.5px;
+  /* Allontana le lettere tra loro */
 }
 
 .sidebar {
@@ -767,7 +791,7 @@ img {
 }
 
 #update p:first-of-type {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 #load-1 {
@@ -776,7 +800,7 @@ img {
   padding: 2rem;
   border: 0.1rem solid var(--white);
   color: var(--white);
-  background-color: var(--lightblue);
+  background-color: var(--lightyellow);
   text-align: center;
 }
 
@@ -786,19 +810,19 @@ img {
   width: 100%;
   padding: 2rem;
   border: 0.1rem solid --white;
-  color: var(--lightblue);
+  color: var(--lightyellow);
   background-color: #bbbbbb;
   text-align: center;
 }
 
 #load-1 {
   color: var(--white);
-  background-color: var(--lightblue);
+  background-color: var(--lightyellow);
 }
 
 #load-2,
 #load-3 {
-  color: var(--lightblue);
+  color: var(--lightyellow);
   background-color: #bbbbbb;
 }
 
@@ -822,7 +846,7 @@ img {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: var(--lightblue);
+  background-color: var(--lightyellow);
   padding-top: 10rem;
 }
 
@@ -831,7 +855,7 @@ img {
 }
 
 .contact .column .content p {
-  color: var(--white);
+  color: var(--darkblue);
   text-align: left;
   margin-left: 13.5rem;
   padding-bottom: 20rem;
@@ -850,7 +874,7 @@ img {
 
 form {
   max-width: 45rem;
-  background: var(--lightblue);
+  background: var(--lightyellow);
   box-sizing: border-box;
   width: 80%;
 }
@@ -858,7 +882,7 @@ form {
 /* .email input, */
 .input,
 .msg .area {
-  background-color: var(--lightblue);
+  background-color: var(--lightyellow);
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
@@ -884,7 +908,7 @@ form {
 }
 
 #display_message {
-  color: var(--lightdark);
+  color: var(--white);
   margin-bottom: 20px;
   background: var(--attention);
   padding: 0px;
@@ -895,12 +919,12 @@ form {
 
 input,
 textarea {
-  background-color: var(--lightblue);
+  background-color: var(--lightyellow);
 }
 
 input #email,
 input #phone {
-  background-color: var(--lightblue);
+  background-color: var(--lightyellow);
 }
 
 .contact {
@@ -916,7 +940,7 @@ input #phone {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  background: var(--lightblue);
+  background: var(--lightyellow);
   padding-top: 1rem;
   padding-bottom: 10rem;
 }
@@ -947,7 +971,7 @@ input #phone {
 }
 
 .footer .box-container .socials a:hover i {
-  color: var(--lightdark);
+  color: var(--white);
 }
 
 .footer .box-container .nav-footer li {
@@ -976,7 +1000,7 @@ input #phone {
 
 .footer-info {
   text-align: center;
-  color: var(--white);
+  color: var(--darkblue);
   font-size: clamp(1.2rem, 1.5vw, 1.6rem);
   margin-top: 1rem;
   padding: 0 1rem;
@@ -1098,7 +1122,6 @@ input #phone {
   .nav-links a {
     font-size: calc(var(--font-large) + 0.4rem);
     letter-spacing: 1px;
-  color: var(--lightdark);
   }
 
   .nav-links li {
@@ -1111,7 +1134,7 @@ input #phone {
 
   .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
-    background-color: var(--lightdark);
+    background-color: var(--darkblue);
   }
 
   .toggle .line2 {
@@ -1120,7 +1143,7 @@ input #phone {
 
   .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
-    background-color: var(--lightdark);
+    background-color: var(--darkblue);
   }
 }
 

@@ -231,7 +231,7 @@ const sendContact = () => {
     if (fields.message) fields.message.style.display = "none";
   } else {
     if (display_message) {
-      display_message.innerHTML = "Ricontrolla email e messaggio";
+      display_message.innerHTML = "Por favor, revisa tus datos";
     }
   }
 };
