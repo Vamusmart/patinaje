@@ -106,39 +106,52 @@ document.addEventListener("DOMContentLoaded", () => {
   const slides = document.getElementsByClassName("mySlides");
   const dots = document.getElementsByClassName("dot");
   
-  // Inizializziamo i riferimenti correnti
-  currentActiveSlide = slides[0];
-  currentActiveDot = dots[0];
+  if (slides.length > 0) {
+    currentActiveSlide = slides[0];
+  }
+  if (dots.length > 0) {
+    currentActiveDot = dots[0];
+  }
   
   showSlides(slideIndex);
 });
 
 function showSlides(n) {
+  // 1. Cancella SEMPRE il timer precedente per evitare conflitti e loop infiniti
+  if (timer) {
+    clearTimeout(timer);
+  }
+
   const slides = document.getElementsByClassName("mySlides");
   const dots = document.getElementsByClassName("dot");
 
   if (!slides.length) return;
 
-  // Riferimento alla slide e al dot attualmente attivi
+  // 2. Rimuovi la classe active in modo ultra-specifico
   const activeSlide = document.querySelector(".mySlides.active");
   const activeDot = document.querySelector(".dot.active");
 
-  // Rimuovi la classe active solo dagli elementi che ce l'hanno
   if (activeSlide) activeSlide.classList.remove("active");
   if (activeDot) activeDot.classList.remove("active");
 
-  if (n === undefined) slideIndex++;
-  else slideIndex = n;
+  // Calcolo dell'indice
+  if (n === undefined) {
+    slideIndex++;
+  } else {
+    slideIndex = n;
+  }
 
   if (slideIndex > slides.length) slideIndex = 1;
   if (slideIndex < 1) slideIndex = slides.length;
 
-  // Aggiungi la classe active solo alla nuova slide
+  // 3. Applica la classe active alla slide e al dot corrente
   slides[slideIndex - 1].classList.add("active");
+  
   if (dots[slideIndex - 1]) {
     dots[slideIndex - 1].classList.add("active");
   }
 
+  // 4. Salva il nuovo timer
   timer = setTimeout(() => showSlides(), 4000);
 }
 
