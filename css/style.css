@@ -1365,6 +1365,7 @@ input #phone {
   .text {
     text-align: center;
     width: fit-content;
+    top: calc(var(--nav-height) + 46.5rem);
   }
 
   h2 {
@@ -1372,7 +1373,7 @@ input #phone {
   }
 
   .card .box-container .box {
-    flex: 1 1 28rem;
+    flex: 1 1 29rem;
   }
 
   .card .box-container {
