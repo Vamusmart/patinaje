@@ -874,7 +874,7 @@ img {
 .contact .column .heading {
   text-align: left;
   color: transparent;
-  color: var(--white);
+  color: var(--white); /* WAVE darkblue to pass the WAVE test */
   text-shadow: 1px 1px 3px var(--blueshadow);
   line-height: 6.5rem;
   padding-left: 13rem;
