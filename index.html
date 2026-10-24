@@ -81,6 +81,8 @@
             <!-- SLIDE 1 -->
             <div class="mySlides fade active" style="opacity:1; visibility:visible;">
               <picture>
+                <source type="image/avif" srcset="images/slide-one-768.avif" media="(max-width: 768px)"
+                  sizes="(max-width: 480px) 100vw, 768px" fetchpriority="high" />
                 <source type="image/webp" fetchpriority="high" srcset="
             images/slide-one-768.webp 768w,
             images/slide-one-1024.webp 1024w,
@@ -101,6 +103,8 @@
             <!-- SLIDE 2 -->
             <div class="mySlides fade">
               <picture>
+                <source type="image/avif" srcset="images/slide-two-768.avif" media="(max-width: 768px)"
+                  sizes="(max-width: 480px) 100vw, 768px" fetchpriority="low" />
                 <source type="image/webp" srcset="
             images/slide-two-768.webp 768w, 
             images/slide-two-1024.webp 1024w,
@@ -121,6 +125,8 @@
             <!-- SLIDE 3 -->
             <div class="mySlides fade">
               <picture>
+                <source type="image/avif" srcset="images/slide-three-768.avif" media="(max-width: 768px)"
+                  sizes="(max-width: 480px) 100vw, 768px" fetchpriority="low" />
                 <source type="image/webp" srcset="
             images/slide-three-768.webp 768w,
             images/slide-three-1024.webp 1024w,
@@ -130,7 +136,7 @@
                  900px" />
                 <img src="images/slide-three-1024.webp"
                   alt="Equipo de patinaje artístico sobre ruedas entrenando para competición en Madrid" width="1440"
-                  height="798" fetchpriority="high" />
+                  height="798" loading="lazy" />
               </picture>
               <div class="text">
                 <h2 class="titolo-stile">Competición<br><span>Y Danza</span></h2>
@@ -279,7 +285,8 @@
 
                 <h2>El patinaje artístico en Madrid como combinación de deporte, arte y disciplina.
                 </h2>
-                <p>Unimos nuestra experiencia de más de 35 años en este deporte junto a la metodología y pasión para ofrecer una formación completa.
+                <p>Unimos nuestra experiencia de más de 35 años en este deporte junto a la metodología y pasión para
+                  ofrecer una formación completa.
                   Cada entrenamiento está diseñado para mejorar la técnica, la expresión corporal,
                   la coordinación y la confianza de nuestros alumnos dentro y fuera de la pista.</p>
               </div>
